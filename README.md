@@ -1,3 +1,3 @@
 # CURRICULUM-VITAE
 
-https://daro2080.github.io/CURRICUKUM-VITAE/
+https://daro2080.github.io/CURRICULUM-VITAE/
