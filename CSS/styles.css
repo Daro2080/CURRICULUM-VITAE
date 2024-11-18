@@ -10,7 +10,7 @@ main{
 
 body{
     min-height: 100vh;/* Altura mínima del viewport para que cubra toda la pantalla */    
-    background: rgb(107 107 107);/* Fondo */
+    background: rgb(145 145 145);/* Fondo */
     font-family: "Ruwudu", serif;
 }
 
@@ -91,6 +91,14 @@ body{
     text-align: center;
 }
 
+.contenedor-img-contacto a {
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+
+
 /*cursos realizados*/
 .contenedor-cursos-realizados {
     border-radius: 10px;
@@ -161,7 +169,7 @@ footer{
 }
 
 footer p{
-    margin: 30px 37%;
+    margin: 30px 36%;
     font-size: 16px;
     font-weight: bold;
     color: #700c8f;
