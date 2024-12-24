@@ -12,6 +12,13 @@
         
         <div class="navegador">
             <nav class="contenedor-nav">
+                <!--inicio menu responsivo-->
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!--menu-->
                 <ul class="menu">
                     <li class="items"><a href="./index.html">Perfil Personal</a></li>
                     <li class="items"><a href="./experiencia-laboral.html">Experiencia Laboral</a></li>
@@ -77,6 +84,14 @@
             </p>
         </div>
     </footer>
-    
+    <script>
+        /*-----------------menu hamburguesa---------------------------------------------*/
+        function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        const toggle = document.querySelector('.menu-toggle');
+        menu.classList.toggle('active');
+        toggle.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
