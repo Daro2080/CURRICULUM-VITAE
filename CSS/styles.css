@@ -14,9 +14,14 @@ body{
     font-family: "Ruwudu", serif;
 }
 
+/*menu hamburguesa*/
+
+/*--------------------------------------------------*/
+
 .menu{
     display: flex;
     justify-content: space-around;
+    
 }
 
 .items{
@@ -51,7 +56,62 @@ body{
     color: rgb(44, 99, 18); /* Cambia el texto a verde */
 }
 
+/*--------------------------------------------------------------------------*/
 
+/* Botón menú hamburguesa */
+/*
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 4px;
+    background: #700c8f;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+*/
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10; /* Asegura que esté encima del menú */
+}
+
+.menu-toggle span {
+    display: block;
+    height: 4px;
+    background: #700c8f;
+    border-radius: 2px;
+    transition: all 1s ease;
+    transform-origin: center;
+}
+
+/* Estado activo del menú hamburguesa */
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0; /* Oculta la línea del medio */
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/*-------------------------------------------------------------------------*/
 
 /* Centrar el título */
 .titulo {
@@ -220,4 +280,47 @@ footer p{
 
 .cerrar:hover {
     color: #bbb;
+}
+
+/*-------------------------------------------------*/
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        background: #fff;       
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .menu.active {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin: 6px;
+        padding: 0 14px;
+    }
+
+    .contenedor-cursos-realizados h3{
+        font-size: x-large;
+    }
+
+    .titulo{
+        margin-top: -120px;
+    }
+
+    .titulos-img{
+        max-width: 225px;
+    }
+
+    footer p{
+        margin: 30px 30%;
+    }
 }
