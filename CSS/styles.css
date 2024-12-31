@@ -293,7 +293,7 @@ footer p{
         transform: translateX(100%);
         opacity: 0;
         visibility: hidden;
-        transition: all 0.3s ease;
+        transition: all 1.3s ease;
     }
 
     .menu.active {
@@ -315,12 +315,49 @@ footer p{
     .titulo{
         margin-top: -120px;
     }
-
+/*
+    .titulo h1{
+        margin-top: -180px;
+    }
+*/
     .titulos-img{
         max-width: 225px;
     }
 
     footer p{
         margin: 30px 30%;
+    }
+}
+
+@media (max-width: 300px){
+    .titulo h1{
+        margin-top: -180px;
+    }
+
+    .perfil-texto{
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .contenedor-cursos-realizados h3 {
+        font-size: 19px;
+    }
+
+    .cursos-texto {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        font-size: 11px;
+    }
+
+    .cursos-contenido{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer p{
+        margin: 10px auto;
+        text-align: center;
+        font-size: 11px;
     }
 }
