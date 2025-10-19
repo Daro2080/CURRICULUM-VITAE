@@ -302,6 +302,7 @@ footer p{
     }
 
     .perfil-texto {
+        margin-top: 0;
         text-align: center;
         font-size: 1.2em;
     }
@@ -371,3 +372,4 @@ footer p{
     
 
 }
+
