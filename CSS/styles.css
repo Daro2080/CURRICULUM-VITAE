@@ -35,7 +35,7 @@ body{
     padding-right: 22px;
     text-decoration: none;
     list-style: none;
-    font-size: 25px;
+    font-size: 30px;
     transition: all 0.3s ease;
 }
 
@@ -121,7 +121,7 @@ body{
 }
 
 .titulo h1 {
-    font-size: 2.5em;
+    font-size: 3.5em;
 }
 
 /* Contenedor de perfil */
@@ -140,7 +140,7 @@ body{
 
 /* Texto a la izquierda */
 .perfil-texto {
-    margin-top: -100px;
+    
     width: 60%;
     line-height: 1.6;
     font-size: 1.5em;
@@ -227,10 +227,11 @@ body{
 
 footer{
     border-top: 7px solid white;
+    text-align: center;
 }
 
 footer p{
-    margin: 30px 36%;
+    margin: 10px 36%;
     font-size: 16px;
     font-weight: bold;
     color: #700c8f;
@@ -363,12 +364,14 @@ footer p{
     }
 
     footer p{
-        margin: 30px 30%;
+        margin: 10px 30%;
     }
 
     /*------------------------------------------*/
     
 
+    
+}
     
 
 }
